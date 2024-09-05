@@ -5,6 +5,7 @@ import model.tcp_ack as ta
 import model.colors as color 
 
 try:
-    ta.res_tcp("192.168.1.23", "192.168.1.1")
+    interfaz = input("\nColoque el nombre de la interfaz conectada a la red\n")
+    hs.obtencion_datos(interfaz)
 except KeyboardInterrupt:
     print(f"{color.WARNING}Interrumpiendo la aplicacion...{color.ENDC}")

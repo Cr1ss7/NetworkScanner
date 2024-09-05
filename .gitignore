@@ -1,0 +1,5 @@
+# ignorar todos los logs
+*.log
+# ignorando la carpeta del cache de python
+_pycache_/
+_pycache__/
