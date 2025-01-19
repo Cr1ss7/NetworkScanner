@@ -6,6 +6,7 @@ import model.colors as color
 
 try:
     interfaz = input("\nColoque el nombre de la interfaz conectada a la red\n")
-    hs.obtencion_datos(interfaz)
+    data = hs.obtencion_datos(interfaz)
+    red = hs.obetencion_red(data[0],data[1])
 except KeyboardInterrupt:
     print(f"{color.WARNING}Interrumpiendo la aplicacion...{color.ENDC}")
